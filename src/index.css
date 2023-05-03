@@ -4,14 +4,6 @@ Imports and Variables
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 */
 
-@font-face {
-	font-family: 'aperculight';
-	src: url('fonts/ApercuLight/apercu_light-webfont.woff2') format('woff2'),
-		 url('fonts/ApercuLight/apercu_light-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
 :root {
 	--black: #231f20;
 	--white: #fff;
@@ -32,16 +24,27 @@ Default styles
 
 * {
 	box-sizing: border-box;
-	font-family: 'aperculight', sans-serif;
+	font-family: sans-serif;
 	margin: 0;
 }
 
 html {
 	scroll-behavior: smooth;
+	height: 100vh;
 }
 
 body {
 	font-size: 10px;
+	background-color: lightgray;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
 }
 
 h1 {

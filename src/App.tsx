@@ -1,15 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 // import { useState, useEffect } from "react"
-
-// import pages
-import Home from "./pages/Home"
-
-// import template components
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-
-// import functions
-
+import Collage from "./components/Collage"
 
 // import styles
 import "./index.css"
@@ -20,11 +11,9 @@ import "./index.css"
 const App = () => {
 	return (
 		<BrowserRouter>
-			<Header />
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" element={<Collage />} />
 			</Routes>
-			<Footer />
 		</BrowserRouter>
 	)
 }
